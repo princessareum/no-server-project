@@ -11,6 +11,9 @@ p {
   font-family: 'Amatic SC', cursive;
 }
 
+
+/*Nav and Header*/
+
 .header {
   width: 100%;
   text-align: center;
@@ -56,30 +59,66 @@ p {
   margin-left: 30px
 }
 
+
+/*content border*/
+
 .mainContainer {
   margin: 50px auto;
   width: 80%;
-  height: auto;
   border: 10px double #6d6d6d;
   padding: 30;
 }
+
+/*home slideshow and home background*/
 
 #slideshow {
   display: none;
 }
 
 #homebackground {
-  display: inline;
-  height:50px;
-  width: 80px;
+  width: 100%;
 }
+
+#homebackground > img {
+  width: 100%;
+}
+
+ui-view {
+  width: 100%;
+}
+
+
+/*menu*/
+.menu img {
+  width: 100%;
+}
+
+
+
+/*contact*/
+
+.contact {
+  display: none;
+}
+
+.map {
+   width:100%;
+
+}
+
+
+
+
+
+
+
+/*footer styling*/
 
 footer {
   background: black;
   height: 200px;
-  position: absolute;
+  /*position: absolute;*/
   bottom: 0;
-  left: 0;
   width: 100%;
   color: white;
   display: flex;
@@ -103,6 +142,18 @@ footer {
   text-shadow: 2px 2px #3aa0ca;
 
 }
+
+
+
+
+
+
+
+
+
+
+
+/*media query*/
 
 @media screen and (min-width: 600px){
   .header h1{
@@ -142,11 +193,51 @@ footer {
     width: 60vw;
     height: 55vh;
   }
+
+  #homebackground {
+    display: none;
+  }
+
+
+
+  /*menu*/
+  .menu {
+    width: 33%;
+    display: inline-block;
+  }
+
+  .menu img {
+    width: 100%;
+  }
+
+
+  /*contact us*/
+
+  .contactContainer {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .contact, .map{
+    flex: 1;
+    text-align: center;
+    justify-content: space-between;
+  }
+
+  .contact {
+    display: block;
+    margin-top: 20px;
+  }
+  .messageBox {
+    height: 50px;
+  }
+
+  .map {
+    padding: 20px;
+  }
 }
 
-#homebackground {
-  display: none;
-}
+
 
 
 @media screen and (min-width: 850px) {
@@ -166,6 +257,14 @@ footer {
     cursor: pointer;
   }
 
+  .menu {
+    width: 25%;
+    display: inline-block;
+  }
+
+  .menu img {
+    width: 100%;
+  }
 
 
 
