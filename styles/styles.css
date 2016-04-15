@@ -3,11 +3,11 @@
   padding: 0;
 }
 
-h1,li  {
+h1,h2,li  {
   font-family: 'Leckerli One', cursive;
 }
 
-p {
+p,h3 {
   font-family: 'Amatic SC', cursive;
 }
 
@@ -89,11 +89,78 @@ ui-view {
 
 
 /*menu*/
+.menu {
+  width: 50%;
+  display: inline-block;
+}
+
 .menu img {
   width: 100%;
 }
 
 
+
+
+/*modal*/
+
+.overlay {
+  position:fixed;
+  top:0;
+  left: 0;
+  width:100%;
+  height:100%;
+  background-color:#000000;
+  opacity: 0.8;
+}
+
+.dialog {
+  position: fixed;
+  width: 300px;
+  height: 500px;
+  top: 50%;
+  left: 50%;
+  transform: translateY(-50%) translateX(-50%);
+  background-color: #fff;
+}
+
+.modalContent {
+  padding:10px;
+  text-align: center;
+}
+
+.modalClose img{
+  position: absolute;
+  width: 25px;
+  top: 3px;
+  right: 5px;
+  padding: 5px;
+  cursor: pointer;
+}
+
+.modalProductInfo {
+  text-align: center;
+  padding: 0 20px;
+}
+
+.modalProductInfo h2 {
+  font-size: 35px;
+  color: #FF83BD;
+  text-shadow: 3px 3px #000;
+}
+
+.modalProductInfo h3 {
+  font-size: 30px;
+  text-decoration: underline;
+}
+
+.modalProductInfo p {
+  font-size: 20px;
+}
+
+.modalProductInfo img {
+  width: 200px;
+  border: 5px dashed #FF83BD;
+}
 
 /*contact*/
 
@@ -224,13 +291,8 @@ footer {
     justify-content: space-between;
   }
 
-  .contact {
-    display: block;
-    margin-top: 20px;
-  }
-  .messageBox {
-    height: 50px;
-  }
+
+
 
   .map {
     padding: 20px;
@@ -266,6 +328,23 @@ footer {
     width: 100%;
   }
 
+  .contact {
+    display: block;
+    margin-top: 20px;
+  }
+
+  .name, .email {
+    width: 300px;
+  }
+  .messageBox {
+    width: 300px;
+    height: 150px;
+  }
+
+  .send {
+    background: #FF83BD;
+    padding: 5px 20px;
+  }
 
 
 }

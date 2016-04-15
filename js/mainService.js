@@ -23,7 +23,19 @@ angular.module('app').service('mainSvc', function(){
     discription: 'Cone shape bread with custard cream filling'},
     {name: 'Veggie Bread',
     image: '../image/veggie.jpg',
-    discription: 'Healthy snack for veggie lovers' }
+    discription: 'Healthy snack for veggie lovers' },
+    {name: 'Strawberry Cake',
+    image: '../image/cake1.jpg',
+    discription: 'Cake with whipped cream and strawberries'},
+    {name: 'Fruit Cake',
+    image: '../image/cake2.jpg',
+    discription: 'Cake with whipped cream and fruits'},
+    {name: 'Sweet Potato Cake',
+    image: '../image/cake3.jpg',
+    discription: 'Sweet potato cake'},
+    {name: 'Chocolate Cake',
+    image: '../image/cake4.jpg',
+    discription: 'Chocolate cake'},
   ];
 
   this.getProducts = function(){
