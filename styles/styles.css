@@ -1,0 +1,172 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+h1,li  {
+  font-family: 'Leckerli One', cursive;
+}
+
+p {
+  font-family: 'Amatic SC', cursive;
+}
+
+.header {
+  width: 100%;
+  text-align: center;
+  height: 250px;
+  position: relative;
+}
+
+.header img {
+  width: 100%;
+  height: 250px;
+  position: relative;
+}
+
+.header > h1 {
+  position: absolute;
+  vertical-align: top;
+  top: 50%;
+  left: 50%;
+  transform: translateY(-100%) translateX(-50%);
+  color: #FF83BD;
+  text-shadow: 3px 2px #000;
+  font-size: 40px;
+}
+
+.navbar {
+  background-image: url('../image/background1.png');
+  height: 5vh;
+  position: relative;
+}
+
+.nav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.nav li{
+  display: inline-block;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 15px;
+  margin-right: 15px;
+  margin-left: 30px
+}
+
+.mainContainer {
+  margin: 50px auto;
+  width: 80%;
+  height: auto;
+  border: 10px double #6d6d6d;
+  padding: 30;
+}
+
+#slideshow {
+  display: none;
+}
+
+#homebackground {
+  display: inline;
+  height:50px;
+  width: 80px;
+}
+
+footer {
+  background: black;
+  height: 200px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  color: white;
+  display: flex;
+  flex-direction: row;
+}
+
+.location, .hours, .sns {
+  margin-top: 30px;
+  flex: 1;
+  text-align: center;
+  font-size: 20px;
+}
+
+.facebook img, .instagram img{
+  width: 25px;
+  height: 25px;
+}
+
+.active {
+
+  text-shadow: 2px 2px #3aa0ca;
+
+}
+
+@media screen and (min-width: 600px){
+  .header h1{
+    font-size: 40px;
+  }
+
+  .nav li {
+    font-size: 20px;
+  }
+
+  .nav a:hover {
+    border: 3px dotted black;
+    text-shadow: 2px 2px #3aa0ca;
+    padding: 0 20px;
+    cursor: pointer;
+  }
+
+  #slideshow {
+      margin: 50px auto;
+      position: relative;
+      width: 60vw;
+      height: 55vh;
+      padding: 10px;
+      box-shadow: 0 0 20px rgba(0,0,0,0.4);
+      display: block;
+  }
+
+  #slideshow > div {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      right: 10px;
+      bottom: 10px;
+  }
+
+  #slideshow img {
+    width: 60vw;
+    height: 55vh;
+  }
+}
+
+#homebackground {
+  display: none;
+}
+
+
+@media screen and (min-width: 850px) {
+  .header h1{
+    font-size: 65px;
+    text-shadow: 5px 4px #000;
+  }
+
+  .nav li {
+    font-size: 25px;
+  }
+
+  .nav a:hover {
+    border: 3px dotted black;
+    text-shadow: 2px 2px #3aa0ca;
+    padding: 0 20px;
+    cursor: pointer;
+  }
+
+
+
+
+}
