@@ -38,6 +38,7 @@ p,h3, input, textarea {
   color: #FF83BD;
   text-shadow: 3px 2px #000;
   font-size: 40px;
+  cursor: pointer;
 }
 
 .navbar {
@@ -163,6 +164,7 @@ input {
 .modalProductInfo {
   text-align: center;
   padding: 0 20px;
+  font-size: 20px;
 }
 
 .modalProductInfo h2 {
