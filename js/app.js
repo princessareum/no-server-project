@@ -1,4 +1,6 @@
-angular.module('app', ['ui.router'])
+angular.module('app', [ 'firebase','ui.router'])
+  .constant('firebaseRoot', 'https://mb-email-list.firebaseio.com/')
+
   .config(function($stateProvider, $urlRouterProvider){
     $stateProvider
       .state('home', {

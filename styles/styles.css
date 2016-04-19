@@ -9,7 +9,7 @@ h1,h2,li  {
   font-family: 'Leckerli One', cursive;
 }
 
-p,h3 {
+p,h3, input, textarea {
   font-family: 'Amatic SC', cursive;
 }
 
@@ -69,6 +69,7 @@ p,h3 {
   width: 80%;
   border: 10px double #6d6d6d;
   padding: 30;
+  font-size: 0px;
 }
 
 /*home slideshow and home background*/
@@ -94,6 +95,7 @@ ui-view {
 .about {
   width: 100%;
   text-align: center;
+  font-size: 20px;
 }
 
 .about img {
@@ -101,11 +103,18 @@ ui-view {
 }
 
 
+input {
+
+}
+
 
 /*menu*/
 .menu {
   width: 50%;
   display: inline-block;
+  font-size: 0px;
+  /*background-color: red;*/
+
 }
 
 .menu img {
@@ -178,6 +187,7 @@ ui-view {
 
 
 
+
 /*contact*/
 
 .contact {
@@ -226,7 +236,9 @@ footer {
 
 }
 
-
+.newsletter, .submit {
+  visibility: hidden;
+}
 
 
 
@@ -318,6 +330,12 @@ footer {
   }
 
 
+  .menu img:hover {
+    background: #000;
+    opacity: 0.6;
+    cursor: pointer;
+  }
+
   /*contact us*/
 
   .contactContainer {
@@ -331,10 +349,28 @@ footer {
     justify-content: space-between;
   }
 
+  .contact {
+    font-size: 16px;
+  }
 
   .map {
     padding: 20px;
   }
+
+  /*footer*/
+  .newsletter, .submit {
+    visibility: visible;
+  }
+
+  .newsletter {
+    width: 150px;
+    height: 22px;
+  }
+  .submit {
+    width: 50px;
+
+  }
+
 }
 
 
@@ -400,17 +436,19 @@ footer {
   /*contact*/
 
   .contact {
-    display: block;
+    display: inline-block;
     margin-top: 20px;
   }
 
   .name, .email {
     width: 300px;
+    height: 25px;
   }
   .messageBox {
     width: 300px;
-    height: 150px;
-
+    min-height: 150px;
+    overflow: scroll;
+    vertical-align: top;
   }
 
   .send {
